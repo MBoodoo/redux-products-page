@@ -1,0 +1,19 @@
+@import "../../theme";
+
+.cart-icon {
+  display: flex;
+  & > span {
+    color: $heavyColor;
+    font-size: 32px;
+    margin-left: .5em;
+  }
+  & > div {
+    padding: .5em;
+    background: $mainColor;
+    svg {  
+      color: $lightFontColor;
+      text-align: center;
+      font-size: 22px;
+    }
+  }
+}

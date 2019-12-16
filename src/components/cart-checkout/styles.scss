@@ -1,0 +1,143 @@
+@import "../../theme";
+.checkout {
+  margin: 0 auto;
+  max-width: 940px;
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  grid-template-rows: repeat(1fr);
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  position: relative;
+
+  .field {
+    margin-bottom: 2em;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 4px;
+      background: $mainColor;
+      box-shadow: $shadow;
+      left: 0;
+    }
+  }
+    input {
+      width: 100%;
+      outline: none;
+      border: none;
+      background: transparent;
+      font-size: 45px;
+      position: relative;
+    }
+  
+}
+.terms {
+  display: flex;
+  margin: 1em;
+  padding: .5em;
+  font-size: 26px;
+  & > * {
+    margin: 0 1em;
+    
+  }
+  input {
+    flex: .2;
+    width: 2em;
+  }
+}
+
+.verify {
+  background: transparent;
+  color: $heavyColor;
+  padding: .5em;
+  border: none;
+  font-size: 22px;
+  border-bottom: 3px solid $heavyColor;
+
+}
+
+.continue {
+  color: $lightFontColor;
+  text-decoration: none;
+  font-size: 18px;
+  background: $mainColor;
+  padding: .5em;
+  position: absolute;
+  left: -5%;
+  bottom: 5%;
+}
+
+.in-cart {
+  grid-column: 3 / 4;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  & > * {
+    margin-bottom: 1em;
+  }
+  .cart-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    button {
+      color: $lightFontColor;
+      text-decoration: none;
+      font-size: 18px;
+      background: $mainColor;
+      padding: .5em;
+      cursor: pointer;
+    }
+  }
+  .checkout-product {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    border-bottom: 1px solid $darkFontColor;
+    padding-bottom: 1em;
+   
+    span {
+      min-width: max-content;
+      justify-self: stretch;  
+    }
+    .product-price {
+      margin-left: auto;
+    }
+    
+    button {
+      margin-left: 2px;
+      border: none;
+      border-radius: 45%;
+      cursor: pointer;
+      box-shadow: $shadow;
+      background: $heavyColor;
+      color: $lightColor;
+    }
+    .remove-product {
+      border-radius: 0%;
+      background: $mainColor;
+      margin-right: 5px;
+      height: min-content;
+    }
+  }
+  & > * {
+   //border: 1px solid black;
+  }
+}
+
+.select-state {
+  min-width: 15em; 
+}
+
+.checkout-total {
+  font-size: 26px;
+  text-align: right
+}
