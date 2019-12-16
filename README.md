@@ -1,6 +1,7 @@
 # sample-products-page
-Created with CodeSandbox
-Made with Redux Hooks & React Hooks!
+Created with CodeSandbox<br />
+
+Made with Redux Hooks & React Hooks!<br />
 Animations made with the framer-motion API and form validation with yup
 
 You can see this project live @ https://6e0v6.sse.codesandbox.io/
