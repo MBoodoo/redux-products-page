@@ -1,4 +1,4 @@
-# redux-products-page
+# sample-products-page
 Created with CodeSandbox
 
 You can see this project live @ https://6e0v6.sse.codesandbox.io/
